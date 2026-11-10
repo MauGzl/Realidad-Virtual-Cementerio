@@ -46,7 +46,7 @@ Inicio (diálogo de misión) → teletransportación por pads → Acción 1 → 
 - **Verificación:** lectura y comprensión del código, prueba en el editor 
 
 ## Estado de la prueba en Android y errores conocidos
-_(completar: modelo de teléfono, si funcionó con visor, y problemas que encontraste)_
+`Error en el movimiento desde la aplicación
 
 ---
 
@@ -56,5 +56,5 @@ _(completar: modelo de teléfono, si funcionó con visor, y problemas que encont
 - **¿Cómo cancela el autoclick y evita repetir?** Si el objeto mirado cambia (o se mira al vacío) el temporizador vuelve a 0. La bandera `fired` bloquea nuevas activaciones hasta que se aparte la mirada.
 - **¿Qué condición habilita el acceso o la salida?** En `GameManager.HandleAction`: `case Gate` exige `lanternOn`; `case Portal` exige `bellRung`.
 - **¿Cuándo ocurren Fade Out, traslado y Fade In?** En `GameManager.TeleportRoutine`: `yield return fade.FadeOut()` → `MovePlayerTo(dest)` → `yield return fade.FadeIn()`.
-- **¿Qué problema detectaste en el teléfono y cómo lo resolviste?** _(escribe uno real que te haya pasado)_
-- **¿Qué desarrollaste, reutilizaste e IA verificaste?** _(completa según tu caso)_
+  
+  
